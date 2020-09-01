@@ -1,0 +1,174 @@
+---
+permalink: /contact/
+---
+
+<!-- Content Starts -->
+<style type="text/css">
+  
+  #contact-page h1, #contact-page h1 + h3 {
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  #contact-page h4 {
+    color: #3e3e3e;
+  }
+  #contact-page .hero {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-image: url('{{ site.baseurl }}/img/marketing-hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  @media (max-width: 576px) {
+    #contact-page .hero {
+      background-image: url('{{ site.baseurl }}/img/mobile/marketing-hero.jpeg');
+    }
+  }
+  #contact-page .filter {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    top: -400px;
+    margin-bottom: -400px;
+    z-index: 0;
+  }
+  #contact-page .body {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  #contact-page .body h2 {
+    margin-bottom: 1rem;
+  }
+  #contact-page .contact-row {
+    justify-content: center;
+  }
+  #contact-page .contact-row iframe {
+    margin-bottom: 1rem;
+  }
+  #contact-page .body img {
+    height: 196px;
+    float: right;
+  } 
+  #contact-page .body img {
+    float: left;
+  }
+  #contact-page hr {
+    margin: 3rem 0;
+  }
+  @media (min-width: 768px) {
+    #contact-page .contact-row {
+      margin-bottom: 4rem;
+    }
+    #contact-page .divider {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    #contact-page .hero {
+      height: 220px;
+    }
+    #contact-page .filter {
+      height: 220px;
+      top: -220px;
+      margin-bottom: -220px;
+    }
+    #contact-page .body {
+      padding-top: 3rem;
+    }
+    #contact-page .body .image-col {
+      display: none;
+    } 
+    #contact-page .body h2 {
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    #contact-page .body .map-col {
+      text-align: center;
+    }
+    #contact-page .body .map-col iframe {
+      width: 290px;
+    }
+  }
+  @media (max-width: 992px) {
+    #contact-page .body img {
+      float: right;
+    }
+  }
+
+</style>
+
+<div id="contact-page">
+  <div class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Get Started</h1>
+          <h3>We're here to help! Let us know how we can be of service.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="filter"></div>
+
+  <div class="container body">
+    <div class="row contact-row">
+      <div class="col-12 col-md-9 col-lg-7">
+        <h2>Get in Contact</h2>
+        <p><small>
+          Note to recruitment agencies: We have a trusted group of 
+          suppliers, partners and people within our network who help 
+          us source the best talent. We are not currently looking to 
+          change this approach.</small>
+        </p>
+        <a class="btn btnteal" href="{{ site.baseurl }}/form/">Talk to Us</a>
+      </div>
+      <div class="col-3 image-col">
+        <img src="{{ site.baseurl }}/img/svg/business-affiliate-network.svg" alt="network-image">
+      </div>
+      <div class="col-8 divider">
+        <hr>
+      </div>
+    </div>
+   
+    
+
+    <div class="row contact-row"> 
+      <div class="col-12 col-md-6 col-lg-5 map-col">
+        <h2>Bristol</h2>
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?q=Bath%20Street,Bristol,BS1 6HL,%20UK
+          &zoom=15
+          &key=AIzaSyCJ4KFOEtCJH_UqzGT82VkGOZYI_ZMeXMw">
+        </iframe>
+        <p>9-10, Bath Street</p>
+        <h4>Bristol, BS1 6HL</h4>
+        <p>Tel: +44 (0)117 911 6390</p>
+      </div>
+
+      <div class="col-8 divider">
+        <hr>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-5 map-col">
+        <h2>London</h2>
+        <iframe 
+          src="https://www.google.com/maps/embed/v1/place?q=42 Weston Street,London,SE1 3QD,%20UK
+          &zoom=15
+          &key=AIzaSyCJ4KFOEtCJH_UqzGT82VkGOZYI_ZMeXMw">
+        </iframe>
+        <p>4th Floor, Capital House, 42 Weston Street</p>
+        <h4>London, SE1 3QD</h4>
+        <p>Tel: +44 (0)117 911 6390</p>
+      </div>
+    </div>  
+  </div>
+</div>
+<!-- End of Content -->

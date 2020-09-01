@@ -1,0 +1,246 @@
+---
+title: Home
+---
+
+<style>
+#home span {
+  color: #04b486;
+}
+@media (max-width: 576px) {
+  #home .sub-heading {
+    font-size: 1.7rem;
+  }
+}
+#home .product-img {
+  border: 1px solid #d4d4d4;
+  padding: 0.5rem;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  #home .product-desktop {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #home .product-mobile {
+    display: none;
+  }
+}
+#home .company-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+}
+@media (max-width: 576px) {
+  #home .company-logos span {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  } 
+}
+#home .company-logos img {
+  height: 50px;
+  margin: 1rem 0;
+}
+
+</style>
+<div id="home">
+<!-- Header -->
+{% include hero-and-animation.html %}
+
+  <!-- TODO this section has an image of the old style of maps on flat branch
+    we want to update this to look like the maps does now. -->
+
+  <div class="container section-wrapper">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="sub-heading">Account Insight, Everywhere.</h1>
+        <!-- <h3>
+          Unrival is the place where innovative marketers uncover
+          game-changing insights about their audiences, customers and
+          prospects. Our platform is driving the ABM decisions of some
+          of the worlds successful B2B brands.
+        </h3> -->
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 padder">
+        <img class="product-img product-desktop" src="{{ site.baseurl }}/img/products/unrival-map-example.gif">
+        <img class="product-img product-mobile" src="{{ site.baseurl }}/img/mobile/products/unrival-map-example.gif">
+      </div>
+      <div class="col-lg-4 padder">
+        <h5>DECISION MAKER & INFLUENCER MAPS</h5>
+        <h4>
+          Easily uncover decision makers and their influencers in 
+          key accounts.
+        </h4>
+        <p>
+          From understanding CIO's in complex multi-nationals, to 
+          exploring the content and channel preferences of data 
+          scientists, Unrival enables marketeers to plan and execute 
+          results-driven ABM that is powered by data.
+        </p>
+        <p>
+          <!-- <a class="btn btnteal" href="sample.pdf">Sample Report</a> -->
+          <a class="btn btntrans" href="{{ site.baseurl }}/products/stakeholder-maps-playbook/">
+            Explore Products
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+    <!-- End TODO -->
+
+
+  <div class="container section-wrapper">
+    <div class="row padder">
+      <div class="col-lg-12 text-center">
+        <h1 class="sub-heading">
+          Aligning Sales, Marketing and Leadership on the same page.
+        </h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 padder">
+        <div
+          class="med-img"
+          style="background-image: url('{{ site.baseurl }}/img/marketing.jpeg');">
+          <div class="square">
+            <div class="content">Marketing</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 med-img-copy padder">
+        <h5>MARKETING SOLUTIONS</h5>
+        <h4>
+          Actionable data-led insights enable Marketers to drive ABM 
+          strategy.
+        </h4>
+        <p>
+          B2B marketers are facing a continually challenging landscape. 
+          Whether its targeting the right accounts and individuals, 
+          segmenting the right demographics or aligning with Sales teams, 
+          Unrival supports Marketing with actionable data-led insights 
+          that enable Marketeers to drive their ABM strategy. 
+        </p>
+        <p>
+          <!-- <a class="btn btnteal" href="sample.pdf">Sample Report</a> -->
+          <a class="btn btntrans" href="{{ site.baseurl }}/solutions/marketing/">Explore Solutions</a>
+        </p>
+      </div>
+    </div>
+    
+
+    <div class="row">
+      <div class="col-lg-6 med-img-copy padder">
+        <h5>SALES SOLUTIONS</h5>
+        <h4>
+          Easily uncover decision makers and their influencers in
+          key accounts.
+        </h4>
+        <p>
+          Use data led insight to uncover key decision makers and 
+          the people who influence them. Target communications to 
+          relevant people and build trust based relationships with 
+          key decision makers and influencers
+        </p>
+        <p>
+          <!-- <a class="btn btnteal" href="sample.pdf">Sample Report</a> -->
+          <a class="btn btntrans" href="{{ site.baseurl }}/solutions/sales/">Explore Solutions</a>
+        </p>
+      </div>
+      <div class="col-lg-6 padder">
+        <div
+        class="med-img"
+        style="background-image: url('{{ site.baseurl }}/img/sales.jpeg');">
+          <div class="square">
+            <div class="content">Sales</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 padder">
+        <div class="med-img" style="background-image: url('{{ site.baseurl }}/img/executive.jpg');">
+          <div class="square">
+            <div class="content">Executives</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 med-img-copy padder">
+        <h5>EXECUTIVE SOLUTIONS</h5>
+        <h4>Data driven decisions to align sales and marketing.</h4>
+        <p>
+          Build your ABM programme with data driven decisions that 
+          enable you to align the sales and marketing teams for 
+          effective, joined up activation. We will help you target 
+          key executives in prospect accounts and make your 
+          communications relevant to the individual.
+        </p>
+        <p>
+          <!-- <a class="btn btnteal" href="sample.pdf">Sample Report</a>  -->
+          <a class="btn btntrans" href="{{ site.baseurl }}/solutions/executives/">Explore Solutions</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container section-wrapper">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="sub-heading">A trusted partner for marketing insights.</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 padder">
+        <div class="med-img" style="background-image: url('{{ site.baseurl }}/img/trust.jpeg');">
+          <div class="square">
+            <div class="content">Trust</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 med-img-copy padder">
+        <h5>TRUST & COMPLIANCE</h5>
+        <h4>Unrival respects personal data and is fully GDPR compliant.</h4>
+        <p>
+          We process only data related to the professional attributes and interests of individuals. We only process data in-line with what our clients ask us to do, and inline with best practice for profiling and handling of sensitive data.
+        </p>
+        <p>
+          <a class="btn btnteal" href="{{ site.baseurl }}/docs/Unrival%20Privacy%20Notice.pdf">Read our Privacy Notice</a>
+          <a class="btn btntrans" href="{{ site.baseurl }}/form/">Talk to Us</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row padder">
+      <div class="col-lg-12">
+        <div class="color-secondary company-logos">
+          <span class="color-secondary">Trusted by</span>
+          <img src="{{ site.baseurl }}/img/trusted/SAP.png">
+          <img src="{{ site.baseurl }}/img/trusted/AWS.png">
+          <img src="{{ site.baseurl }}/img/trusted/Shell.png">
+          <img src="{{ site.baseurl }}/img/trusted/Reevoo.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% include contact.html %}
+
+<script type="text/javascript">
+  var hero = document.querySelector('.hero');
+  var windowHeight = window.innerHeight - 90;
+  hero.style.height = windowHeight+'px';
+  window.addEventListener('resize', () => {
+    windowHeight = window.innerHeight - 90;
+    hero.style.height = windowHeight+'px';
+  });
+</script>
+

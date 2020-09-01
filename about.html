@@ -1,0 +1,144 @@
+---
+permalink: /about/
+---
+
+<!-- Content Starts -->
+<style type="text/css">
+  a {
+    color: inherit;
+    text-decoration: none !important;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+  a:visited {
+    text-decoration: none !important;
+  }
+  a:active {
+    text-decoration: none !important;
+  }
+  #about-us {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  #about-us h1 {
+    margin-bottom: 3rem;
+  }
+  #about-us .article-wrapper {
+    color: #292b2c;
+  }
+  #about-us .article-wrapper:hover {
+    cursor: pointer;
+    color: #04b486;
+    transition: all .3s;
+  }
+  #about-us .article {
+    overflow: hidden;
+    transition: height .3s;
+    box-shadow: 5px 5px 20px gray;
+  }
+  @media (max-width: 576px) {
+    #about-us .article {
+      width: 260px;
+      margin: 0 auto 2rem auto;
+    }
+  }
+  #about-us .article img {
+    width: 100%;
+  }
+  #about-us .service-heading {
+    margin-top: 2rem;
+    color: inherit;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  #about-us .about-img {
+    background-image: url('{{ site.baseurl }}/img/Unrival-304-700x600.jpg');
+  }
+  @media (max-width: 576px) {
+    #about-us .about-img {
+      background-image: url('{{ site.baseurl }}/img/mobile/Unrival-304-700x600.jpg');
+    }
+  }
+</style>
+<div id="about-us">
+  <div class="container">
+    <div class="row title-row">
+      <div class="col-lg-12 text-center">
+        <h1>About Unrival</h1>
+      </div>
+    </div>
+    <div class="row med-img-row">
+      <div class="col-lg-6 med-img-col">
+        <div class="med-img about-img">
+        </div>
+      </div>
+      <div class="col-lg-6 med-img-copy">
+        <h2>Our Story</h2>
+        <h3>Meet Unrival's Executive Team</h3>
+        <p>
+          Hello, we started Unrival in 2014, with a mission to revolutionise
+          B2B marketing. We're proud to say we're doing that - with our
+          ongoing work with some of the world's largest technology, energy,
+          telecommunications and financial services companies, we are the
+          secret sauce that is powering executive conversations, pipeline and
+          revenue growth across every continent.
+        </p>
+        <p>
+          We're proud of our growing team and the impact our work has on
+          transforming the careers of the clients we work with.
+        </p>
+        <p>Hue and Max.</p>
+      </div>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1 class="sub-heading">Blog Posts From Unrival</h1>
+        </div>
+      </div>
+      <div class="row">
+        <a
+        href="https://medium.com/@unrival/the-importance-of-insight-for-marketers-e043fa7f48d2"
+        class="col-md-4 col-sm-6 col-12 article-wrapper"
+        target="_blank">
+        <div class="article">
+          <img src="{{ site.baseurl }}/img/blog-posts/importance-of-insight.png">
+        </div>
+        <h4 class="service-heading">
+          The Importance of Insight for Marketers
+        </h4>
+      </a>
+
+      <a
+      href="https://medium.com/@unrival/what-is-the-digital-workplace-b4c30863f88b"
+      class="col-md-4 col-sm-6 col-12 article-wrapper"
+      target="_blank">
+      <div class="article">
+        <img src="{{ site.baseurl }}/img/blog-posts/what-is-the-digital-workplace.png">
+      </div>
+      <h4 class="service-heading">
+        What is the Digital Workplace?
+      </h4>
+    </a>
+
+    <a
+    href="https://www.linkedin.com/company/unrival/"
+    class="col-md-4 col-sm-6 col-12 article-wrapper"
+    target="_blank">
+    <div class="article">
+      <img src="{{ site.baseurl }}/img/blog-posts/linked-in.png">
+    </div>
+    <h4 class="service-heading">
+      Check out our LinkedIn for More
+    </h4>
+  </a>
+</div>
+</section>
+</div>
+
+{% include contact.html %}
+
+<!-- End of Content -->

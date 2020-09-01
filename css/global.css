@@ -1,0 +1,126 @@
+#global {
+  font-family: 'Quicksand', sans-serif;
+  padding-top: 90px;
+}
+
+#global p, #global h1, #global h2, #global h3, #global h4, #global h5, #global h6, #global a, #global button {
+  color: #3e3e3e;
+  /* -webkit-font-weight: 700; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
+}
+
+#global h1 {
+  font-size: 2.5rem;
+}
+
+#global h2 {
+  font-size: 2rem;
+}
+
+#global h3 {
+  color: #888888;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+#global h4 {
+  font-size: 1.4rem;
+  color: #04b486;
+}
+
+#global h5 {
+  font-size: 1rem;
+}
+
+#global p {
+  font-size: 1.1rem;
+}
+
+#global a {
+  color: #04b486;
+}
+
+#global .color-secondary {
+  color: #a0a0a0;
+}
+#global .btntrans {
+  background: transparent;
+  border: 1px solid #04b486;
+  color: #04b486;
+  border-radius: 5px;
+  font-size: 12px;
+}
+#global .btnteal {
+  background: #04b486;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #fff;
+}
+#global .med-img-row {
+  margin-bottom: 4rem;
+}
+#global .med-img {
+  background-size: cover;
+  background-position: center;
+  height: 370px;
+  padding-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+#global .square {
+  border: 6px solid #fff;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  padding: 0 2rem;
+}
+#global .content {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+}
+@media (max-width: 576px) {
+  #global .content {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 992px) {
+  #global .med-img-col {
+    order: 1;
+  }
+  #global .med-img-copy {
+    order: 2;
+  }
+}
+#global .title-row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#global .usecaseicon {
+  background: #04b486;
+  width: 74px;
+  height: 74px;
+  border-radius: 75px;
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  display: inline-block;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+}
+#global .usecaseicon .icon {
+  font-size: 2rem;
+}
+#global footer {
+  margin-top: 6rem;
+}
+#global .section-wrapper {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+#global .padder {
+  padding-top: 5rem;
+}

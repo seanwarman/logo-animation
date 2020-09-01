@@ -1,0 +1,146 @@
+<style type="text/css">
+  #navbar {
+    background-color: white;
+    transition: padding .2s;
+    padding: 26px 16px;
+  }
+  #navbar a {
+    color: #262626;
+  }
+  #navbar a img {
+    height: 30.38px;
+  }
+  #navbar .navbar-toggler {
+    position: absolute;
+    right: 1rem;
+    color: #04b486;
+    transition: top .2s;
+  }
+  #navbar .navbar-toggler:focus {
+    outline: 0;
+  }
+  #navbar .navbar-toggler:hover {
+    cursor: pointer;
+  }
+  #navbar .btn {
+    background: #04b486; 
+    color: #fff;
+  }
+  @media (min-width: 992px) {
+    #navbar .nav-container {
+      width: 80%;
+      display: flex;
+      margin: 0 auto;
+    }
+    #navbar .btn {
+      margin-left: 1rem;
+    }
+  }
+  #navbar .dropdown-item:active {
+    background-color: white;
+  }
+</style>
+
+<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse" id="navbar">
+  <div class="nav-container">
+    <a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/logo-black-300ppi.png"></a>
+    
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarResponsive" 
+      aria-controls="navbarResponsive" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a 
+            class="nav-link dropdown-toggle" 
+            href="{{ site.baseurl }}/products/" 
+            id="navbarDropdown" 
+            role="button" 
+            data-toggle="dropdown" 
+            aria-haspopup="true" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ site.baseurl }}/products/stakeholder-maps-playbook/">
+              Stakeholder Map
+            </a>
+            <a class="dropdown-item" href="{{ site.baseurl }}/products/account-blitz/">
+              Account Blitz
+            </a>
+            <a class="dropdown-item" href="{{ site.baseurl }}/products/account-prioritisation/">
+              Account Prioritisation
+            </a>
+            <a class="dropdown-item" href="{{ site.baseurl }}/products/profiling/">
+              Individual Profiling
+            </a>
+            <a class="dropdown-item" href="{{ site.baseurl }}/products/audience-insights/">
+              Audience Insights
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a 
+            class="nav-link dropdown-toggle" 
+            href="{{ site.baseurl }}/solutions/" 
+            id="navbarDropdown" 
+            role="button" 
+            data-toggle="dropdown" 
+            aria-haspopup="true" 
+            aria-expanded="false">
+            SOLUTIONS
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ site.baseurl }}/solutions/marketing/">
+              For Marketing
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{ site.baseurl }}/solutions/sales/">
+              For Sales
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{{ site.baseurl }}/solutions/executives/">
+              For Executives
+            </a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/about/">ABOUT US</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{ site.baseurl }}/contact/">CONTACT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link btn" href="https://go.unrival.net/">LOGIN</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<script type="text/javascript">
+  var navbar = document.getElementById('navbar');
+  var menu = document.getElementsByClassName('navbar-toggler')[0];
+
+  navbar.style.padding = (window.scrollY > 40) ? '8px 16px' : '26px 16px';
+  menu.style.top = (window.scrollY > 40) ? '12px' : '30px';
+
+  document.addEventListener('scroll', () => {
+    navbar.style.padding = (window.scrollY > 40) ? '8px 16px' : '26px 16px';
+    menu.style.top = (window.scrollY > 40) ? '12px' : '30px';
+  })
+
+</script>

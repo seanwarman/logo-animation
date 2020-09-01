@@ -1,0 +1,94 @@
+---
+permalink: /form/
+---
+<!-- Content Starts -->
+<style type="text/css">
+  #form .row {
+    justify-content: center;
+  }
+  #form input, #form textarea {
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgb(204, 204, 204);
+    cursor: pointer;
+    color: rgb(60, 60, 60);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  #form textarea {
+    height: 100px;
+  }
+  #form .item-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+  }
+  #form input:focus {
+    outline: none;
+    border-color: #66afe9;
+  }
+  @media (min-width: 576px) {
+    #form .btnteal {
+      width: 100px;
+    }  
+  }
+</style>
+<div id="form">
+  
+  <div class="section-wrapper container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1>Contact Unrival</h1>
+      </div>
+    </div>
+    <div class="row padder">
+      <div class="col-12 col-md-7">
+        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script>
+          function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500);
+        </script>
+
+          <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+            <input type=hidden name='captcha_settings' value='{"keyname":"Unrivaldotnet","fallback":"true","orgId":"00D0O000000qk4O","ts":""}'>
+
+            <input type=hidden name="oid" value="00D0O000000qk4O">
+
+            <input type=hidden name="retURL" value="http://unrival.gitlab.io/unrival.net/thankyou">
+
+            <label for="first_name">First Name</label>
+            <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" />
+            <br>
+
+            <label for="last_name">Last Name</label>
+            <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" />
+            <br>
+
+            <label for="email">Email</label>
+            <input  id="email" maxlength="80" name="email" size="20" type="text" />
+            <br>
+
+            <label for="company">Company</label>
+            <input  id="company" maxlength="40" name="company" size="20" type="text" />
+            <br>
+
+            <label for="description">Description</label>
+            <textarea name="description"></textarea>
+            <br>
+
+            <div class="g-recaptcha" data-sitekey="6LeSvUYUAAAAALLu7FRc1rirpKoxwS8MsVSfl5HX"></div>
+            <br>
+            <input class="btn btnteal" type="submit" name="submit">
+          </form>
+          
+      </div>  
+    </div>
+  </div>
+  
+</div>
+{% include contact.html %}
+<!-- End of Content -->
